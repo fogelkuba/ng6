@@ -1,12 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { Observable } from 'rxjs';
-
+import { trigger, style, transition, animate, keyframes, query, stagger } from '@angular/animations';
 
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
-  styleUrls: ['./users.component.scss']
+  styleUrls: ['./users.component.scss'],
+  animations: [
+    trigger('listStagger', [
+      transition('* <=> *', [
+        query(':enter' ,)
+        ])
+      ])
+    ])
+  ]
 })
 export class UsersComponent implements OnInit {
 
