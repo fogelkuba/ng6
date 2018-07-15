@@ -1,8 +1,8 @@
 <h1>Posts</h1>
 <ul>
-  <li *ngFor="let post of posts">
-    <a href="../details/{{post.userId}}">Author: {{post.userId}}</a>
-    <p><strong>{{post.title}}</strong></p>
+  <li *ngFor="let post of posts" style="margin-bottom: 10px; list-style: none">
+    <p><strong>Title:</strong> {{post.title}}</p>
     <span>{{post.body}}</span>
+    <a href="../details/{{post.userId}}"> Author: {{post.userId}}</a>
   </li>
 </ul>
