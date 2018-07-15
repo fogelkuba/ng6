@@ -7,14 +7,14 @@ import { trigger, style, transition, animate, keyframes, query, stagger } from '
   selector: 'app-users',
   templateUrl: './users.component.html',
   styleUrls: ['./users.component.scss'],
-  animations: [
-    trigger('listStagger', [
-      transition('* <=> *', [
-        query(':enter' ,)
-        ])
-      ])
-    ])
-  ]
+  // animations: [
+  //   trigger('listStagger', [
+  //     transition('* <=> *', [
+  //       query(':enter' ,)
+  //       ])
+  //     ])
+  //   ])
+  // ]
 })
 export class UsersComponent implements OnInit {
 
